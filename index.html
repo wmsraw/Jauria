@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Productos Exclusivos de Dropshipping | Envío Gratis</title>
+    <meta name="description" content="Descubre nuestra colección exclusiva de productos de dropshipping: ropa estampada, gadgets innovadores y más. Envío gratis, pago seguro y atención personalizada.">
+    <meta name="keywords" content="dropshipping, tienda online, ropa estampada, gadgets, productos únicos, envío gratis, comprar online">
+    <meta name="author" content="Tu Marca de Dropshipping">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-sitio.web.app/">
+    <meta property="og:title" content="Tienda Online - Productos Exclusivos de Dropshipping">
+    <meta property="og:description" content="Descubre nuestra colección exclusiva de productos de dropshipping: ropa estampada, gadgets innovadores y más. Envío gratis, pago seguro y atención personalizada.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tu-sitio.web.app/">
+    <meta property="twitter:title" content="Tienda Online - Productos Exclusivos de Dropshipping">
+    <meta property="twitter:description" content="Descubre nuestra colección exclusiva de productos de dropshipping: ropa estampada, gadgets innovadores y más. Envío gratis, pago seguro y atención personalizada.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better control */
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #10b981;
+            --accent-color: #f59e0b;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+        }
+        .btn-primary {
+            @apply bg-primary-color text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary-color/90 transform hover:-translate-y-1 shadow-md;
+        }
+        .btn-secondary {
+            @apply bg-secondary-color text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-secondary-color/90 transform hover:-translate-y-1 shadow-md;
+        }
+        .btn-outline {
+            @apply border border-primary-color text-primary-color px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary-color/10 hover:-translate-y-1;
+        }
+        .product-card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+        }
+        .product-image {
+            @apply w-full h-48 object-cover;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-12 text-dark-color relative;
+        }
+        .section-title::after {
+            @apply content-[''] absolute bottom-[-8px] left-[50%] transform -translate-x-1/2 w-24 h-0.5 bg-primary-color;
+        }
+        .feature-icon {
+            @apply w-12 h-12 bg-primary-color/10 rounded-full flex items-center justify-center text-primary-color mb-4;
+        }
+        .testimonial {
+            @apply bg-light-color rounded-xl p-6 shadow-md border-l-4 border-primary-color;
+        }
+        .faq-item {
+            @apply border-b border-gray-200 last:border-b-0;
+        }
+        .faq-question {
+            @apply cursor-pointer flex items-center justify-between p-4 text-lg font-medium text-dark-color transition-colors duration-200 hover:bg-gray-50;
+        }
+        .faq-answer {
+            @apply max-h-0 overflow-hidden transition-max-height duration-300 ease-out text-gray-600 p-0 px-4 pt-0 pb-4;
+        }
+        .faq-item.active .faq-answer {
+            @apply max-h-[200px] p-4 px-4 pt-0 pb-4;
+        }
+        .newsletter-input {
+            @apply w-full px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-color;
+        }
+        .newsletter-btn {
+            @apply bg-primary-color text-white px-5 py-3 rounded-r-lg hover:bg-primary-color/90 transition-colors duration-200;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-primary-color">TuMarca</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#hero" class="text-gray-600 hover:text-primary-color transition-colors duration-200">Inicio</a>
+                    <a href="#productos" class="text-gray-600 hover:text-primary-color transition-colors duration-200">Productos</a>
+                    <a href="#beneficios" class="text-gray-600 hover:text-primary-color transition-colors duration-200">Beneficios</a>
+                    <a href="#testimonios" class="text-gray-600 hover:text-primary-color transition-colors duration-200">Testimonios</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary-color transition-colors duration-200">FAQ</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-primary-color">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary-color">Inicio</a>
+                    <a href="#productos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary-color">Productos</a>
+                    <a href="#beneficios" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary-color">Beneficios</a>
+                    <a href="#testimonios" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary-color">Testimonios</a>
+                    <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary-color">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-b from-primary-color/5 via-transparent to-transparent">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Hero background" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="relative pt-20 pb-24 md:pt-28 md:pb-32">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight shadow-md">
+                    Productos Únicos que Transforman tu Estilo
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-xl mx-auto shadow-sm">
+                    Descubre nuestra colección exclusiva de ropa estampada, gadgets innovadores y productos de estilo de vida que no encontrarás en ningún otro lugar. Envío gratis a todo el mundo.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#productos" class="btn-primary">Ver Colección</a>
+                    <a href="#beneficios" class="btn-outline">Por qué Elegirnos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="productos" class="py-16 bg-light-color">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                Selección cuidadosamente curada de los mejores productos de dropshipping para elevar tu estilo diario.
+            </p>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Camiseta estampada artística" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Camiseta Estampada Artística</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Diseño único inspirado en arte contemporáneo. Algodón orgánico premium, corte unisex, disponible en múltiples tallas.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$29.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$39.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto1" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Reloj inteligente deportivo" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Reloj Inteligente Deportivo</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Monitor de frecuencia cardiada, GPS integrado, resistencia al agua 5ATM, batería de 7 días. Compatível con iOS y Android.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$89.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$119.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto2" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Mochila urbana resistente" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Mochila Urbana Resistente</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Material impermeable de alta densidad, puerto USB integrado, compartimento para laptop 15", correas ergonómicas acolchadas.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$45.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$59.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto3" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1593642532403-3156654d0138?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Taza mágica termo sensible" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Taza Mágica Termosensible</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Cambia de color con líquidos calientes. Diseño sorpresa que revela arte oculto. Capacidad 350ml, cerámica de alta calidad.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$19.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$24.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto4" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583454120514-4074aa861e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Auriculares inalámbricos premium" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Auriculares Inalámbricos Premium</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Cancelación activa de ruido, sonido Hi-Fi, carga rápida USB-C, resistencia al sudor IPX5, 30 horas de autonomía total.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$79.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$99.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto5" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Set de utensilios de cocina silicona" class="product-image">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Set de Utensilios de Cocina Silicona</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Resistente al calor hasta 230°C, antiadherente, apto para lavavajillas. Incluye espátula, cuchara, pinzas y batidor.</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-2xl font-bold text-primary-color mr-2">$24.99</span>
+                            <span class="text-gray-400 line-through text-sm ml-1">$32.99</span>
+                        </div>
+                        <a href="https://tu-tienda.com/producto6" class="btn-primary w-full">Comprar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">¿Por Qué Comprar con Nosotros?</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="text-center">
+                    <div class="feature-icon">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4 2 2 0 000 4zm-6 0a2 2 0 100-4 2 2 0 000 4zm6 0a2 2 0 100-4 2 2 0 000 4zm6 0a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Envío Gratis Mundial</h3>
+                    <p class="text-gray-600">Sin costo adicional en todos los pedidos, sin importar dónde estés. Llegamos a más de 100 países.</p>
+                </div>
+                <div class="text-center">
+                    <div class="feature-icon">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zm0-6c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zm0 10c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Pago 100% Seguro</h3>
+                    <p class="text-gray-600">Encriptación SSL de nivel bancario. Aceptamos tarjetas, PayPal y otros métodos confiables. Protección al comprador garantizada.</p>
+                </div>
+                <div class="text-center">
+                    <div class="feature-icon">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.5 19h9"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Devoluciones Fáciles</h3>
+                    <p class="text-gray-600">Política de devolución de 30 días sin preguntas. Reembolso completo o cambio, tú decides. Nos encargamos de la logística inversa.</p>
+                </div>
+                <div class="text-center">
+                    <div class="feature-icon">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Atención Personalizada</h3>
+                    <p class="text-gray-600">Equipo de soporte disponible 24/7 vía chat, email y teléfono. Resolvemos tus dudas en menos de 2 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-16 bg-light-color">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="grid gap-6 mt-10">
+                <div class="testimonial">
+                    <p class="italic text-gray-700 mb-4">"¡La camiseta llegó antes de lo esperado y la calidad es excepcional! El diseño es exactamente como en las fotos. Definitivamente volveré a comprar."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="María G." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">María G., Madrid</h4>
+                            <p class="text-sm text-gray-500">Compró: Camiseta Estampada Artística</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="italic text-gray-700 mb-4">"El reloj inteligente superó mis expectativas. La batería dura una semana completa y el monitor de sueño es muy preciso. Relación calidad-precio imbatible."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Carlos R." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Carlos R., Barcelona</h4>
+                            <p class="text-sm text-gray-500">Compró: Reloj Inteligente Deportivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="italic text-gray-700 mb-4">"La mochila es perfecta para mi día a día. El puerto USB es un salvavidas y el material realmente repele el agua. Muy recomendada para estudiantes y profesionales."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Ana L." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Ana L., México DF</h4>
+                            <p class="text-sm text-gray-500">Compró: Mochila Urbana Resistente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="italic text-gray-700 mb-4">"Me encantó la taza mágica. Mi hijo se sorprende cada vez que cambia de color con el chocolate caliente. Producto divertido y de buena calidad."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Javier M." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Javier M., Buenos Aires</h4>
+                            <p class="text-sm text-gray-500">Compró: Taza Mágica Termosensible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="mt-10 space-y-2">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto tarda el envío?</span>
+                        <svg class="h-5 w-5 transition-transform duration-200" id="faq-icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">Los tiempos de envío varían según el destino: 5-10 días hábiles para América Latina y Europa, 7-15 días para el resto del mundo. Todos los envíos incluyen número de seguimiento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Los tallas son reales?</span>
+                        <svg class="h-5 w-5 transition-transform duration-200" id="faq-icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">Sí, nuestras tallas siguen estándares internacionales. Cada producto incluye una guía de tallas detallada en su descripción. En caso de duda, nuestro equipo puede ayudarte a elegir la talla perfecta.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo cambiar o devolver un producto?</span>
+                        <svg class="h-5 w-5 transition-transform duration-200" id="faq-icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">¡Claro que sí! Tienes 30 días desde la recepción para solicitar una devolución o cambio. El proceso es sencillo: contáctanos, te enviamos una etiqueta de prepago y reembolsamos el monto total al recibir el producto en nuestras instalaciones.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Es seguro comprar en su sitio web?</span>
+                        <svg class="h-5 w-5 transition-transform duration-200" id="faq-icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">Totalmente seguro. Utilizamos encriptación SSL de 256 bits, cumplimos con PCI DSS para pagos y nunca almacenamos tus datos financieros. Nuestra política de privacidad protege tu información personal en todo momento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Ofrecen descuentos por compra al por mayor?</span>
+                        <svg class="h-5 w-5 transition-transform duration-200" id="faq-icon-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">Sí, ofrecemos precios especiales para compras al por mayor (10+ unidades del mismo producto). Contáctanos vía email o chat para obtener un presupuesto personalizado según tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-primary-color">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Únete a Nuestra Comunidad</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Suscríbete para recibir acceso anticipado a nuevos productos, ofertas exclusivas y contenido de estilo de vida.
+            </p>
+            <form action="#" method="POST" class="max-w-xl mx-auto flex flex-col md:flex-row items-stretch">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required class="newsletter-input">
+                <button type="submit" class="newsletter-btn">Suscribirme</button>
+            </form>
+            <p class="mt-4 text-xs text-white/70">Prometemos no spam. Puedes darte de baja en cualquier momento.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-color text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">TuMarca</h3>
+                    <p class="text-gray-300 mb-4">Productos exclusivos de dropshipping con estilo único y calidad garantizada. Envío gratis a todo el mundo.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 00-1-1h-5"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v9a2 2 0 01-2 2zM12 10a8 8 0 100 16 8 8 0 000-16z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707-.293l-2.414-2.414a1 1 0 00-1.414 0l-2.414-2.414A1 1 0 004 7.586V7a2 2 0 012-2h12a2 2 0 012 2v.586z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Navegación</h4>
+                    <ul class="space-y-2 text-gray-300 hover:text-white transition-colors duration-200">
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Soporte</h4>
+                    <ul class="space-y-2 text-gray-300 hover:text-white transition-colors duration-200">
+                        <li><a href="mailto:soporte@tumarca.com">soporte@tumarca.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="#">Chat en Vivo</a></li>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Newsletter</h4>
+                    <p class="text-gray-300 mb-3">Recibe novedades y ofertas exclusivas</p>
+                    <form action="#" method="POST" class="flex items-stretch">
+                        <input type="email" name="email" placeholder="Tu email" required class="w-full px-3 py-2 border border-gray-600 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-secondary-color text-white bg-dark-color/50 placeholder-gray-400">
+                        <button type="submit" class="bg-secondary-color text-white px-4 py-2 rounded-r-lg hover:bg-secondary-color/90 transition-colors duration-200">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                © 2026 TuMarca. Todos los derechos reservados. <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Política de Privacidad</a> | <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu and FAQ -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+
+                // Rotate icon
+                const icon = parent.querySelector('svg');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
