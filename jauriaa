@@ -1,1122 +1,2423 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jauria - Productos Exclusivos de Dropshipping | Envío Gratis</title>
-      <meta name="description" content="Descubre nuestra colección exclusiva de
-  productos de dropshipping: ropa estampada, gadgets innovadores y más. Envío gratis a
-  todo el mundo, pago seguro y atención personalizada. Descubre productos únicos que
-  transforman tu estilo.">
-      <meta name="keywords" content="dropshipping, tienda online, ropa estampada,
-  gadgets, productos únicos, envío gratis, comprar online, moda sostenible, accesorios
-  tecnológicos, regalos originales">
-      <meta name="author" content="Jauria">
-      <link rel="canonical" href="https://jauria.web.app/">
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://wmsraw.github.io/Jauria/">
-      <meta property="og:title" content="Jauria - Productos Exclusivos de Dropshipping
-  | Envío Gratis">
-      <meta property="og:description" content="Descubre nuestra colección exclusiva de
-  productos de dropshipping: ropa estampada, gadgets innovadores y más. Envío gratis a
-  todo el mundo, pago seguro y atención personalizada.">
-      <meta property="og:image" content="https://images.unsplash.com/photo-152327533568
-  4-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%
-  3D&auto=format&fit=crop&w=1200&q=80">
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image">
-      <meta property="twitter:url" content="https://wmsraw.github.io/Jauria/">
-      <meta property="twitter:title" content="Jauria - Productos Exclusivos de
-  Dropshipping | Envío Gratis">
-      <meta property="twitter:description" content="Descubre nuestra colección
-  exclusiva de productos de dropshipping: ropa estampada, gadgets innovadores y más.
-  Envío gratis a todo el mundo, pago seguro y atención personalizada.">
-      <meta property="twitter:image" content="https://images.unsplash.com/photo-1523275
-  335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8f
-  A%3D%3D&auto=format&fit=crop&w=1200&q=80">
-      <!-- Tailwind CSS via CDN -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Schema.org Structured Data (PRESERVED FROM YOUR ORIGINAL) -->
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Jauria",
-        "url": "https://wmsraw.github.io/Jauria/",
-        "logo":
-  "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3w
-  xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-234-567-890",
-          "contactType": "Customer Service",
-          "email": "soporte@jauria.com"
-        },
-        "sameAs": [
-          "https://facebook.com/jauria",
-          "https://instagram.com/jauria",
-          "https://twitter.com/jauria"
-        ]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jauria Viral Shop - Productos Tendencia</title>
+  <meta name="description" content="Descubre los productos que todo el mundo quiere. Tendencias virales respaldadas por miles de compradores satisfechos.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="#" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <style>
+/*
+  Main Styles - Jauria Viral HTML Site
+*/
+
+/* CSS Variables for easy theming */
+:root {
+  --color-primary: #ff6b6b;
+  --color-secondary: #4ecdc4;
+  --color-dark: #2c3e50;
+  --color-light: #ffffff;
+  --color-muted: #7f8c8d;
+  --color-border: #eee;
+  --color-bg-light: #fafafa;
+
+  --font-primary: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  --transition-base: 0.3s ease;
+  --transition-fast: 0.15s ease;
+  --transition-slow: 0.5s ease;
+
+  --border-radius: 12px;
+  --border-radius-pill: 50px;
+  --box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  --box-shadow-hover: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+/* Global Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background-color: var(--color-background);
+  margin: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2.2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.mt-0 { margin-top: 0; }
+.mt-5 { margin-top: .5rem; }
+.mt-10 { margin-top: 1rem; }
+.mt-15 { margin-top: 1.5rem; }
+.mt-20 { margin-top: 2rem; }
+.mt-25 { margin-top: 2.5rem; }
+.mt-30 { margin-top: 3rem; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-5 { margin-bottom: .5rem; }
+.mb-10 { margin-bottom: 1rem; }
+.mb-15 { margin-bottom: 1.5rem; }
+.mb-20 { margin-bottom: 2rem; }
+.mb-25 { margin-bottom: 2.5rem; }
+.mb-30 { margin-bottom: 3rem; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-base);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-light);
+  padding: 1.2rem 2.5rem;
+  border-radius: var(--border-radius-pill);
+  font-size: 1.6rem;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 1.1rem 2.4rem;
+  border-radius: var(--border-radius-pill);
+  font-size: 1.6rem;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 107, 107, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form Styles */
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  transition: var(--transition-base);
+  width: 100%;
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+}
+
+/* Layout Components */
+.header-top-bar {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: .8rem 0;
+  font-size: 1.4rem;
+}
+
+.header-top-bar a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.header-top-bar a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  z-index: 1000;
+  background-color: var(--color-light);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo img {
+  max-height: 4rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.site-header nav a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: .5rem 0;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.site-header nav a:hover {
+  color: var(--color-primary);
+}
+
+.site-header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  width: 0;
+  height: .2rem;
+  background-color: var(--color-primary);
+  transition: width var(--transition-base);
+}
+
+.site-header nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: .4rem;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 2.5rem;
+  height: .2rem;
+  background-color: var(--color-dark);
+  display: block;
+  transition: var(--transition-base);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .site-header nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 25rem;
+    background-color: var(--color-light);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 8rem 2rem;
+    transition: right var(--transition-slow);
+    z-index: 999;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .site-header nav.open {
+    right: 0;
+  }
+
+  .site-header nav a {
+    padding: 1.2rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .site-header .cart-icon {
+    margin-left: auto;
+  }
+}
+
+/* Cart Icon */
+.site-header .cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.site-header .cart-icon a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+.site-header .cart-icon .count {
+  position: absolute;
+  top: -.8rem;
+  right: -.8rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-radius: 50%;
+  padding: .2rem .6rem;
+  font-size: 1.2rem;
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 25rem;
+  background-color: var(--color-light);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 8rem 2rem;
+  transition: right var(--transition-slow);
+  z-index: 999;
+  border-left: 1px solid var(--color-border);
+  display: flex;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.mobile-menu nav a {
+  padding: 1.2rem 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+/* Section Spacing */
+.section-padding {
+  padding: 6rem 0;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* Animation Utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn .5s ease forwards;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Accessibility */
+.skip-to-content {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: .8rem 1.2rem;
+  border-radius: .4rem;
+  z-index: 9999;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .no-print,
+  .header,
+  .footer,
+  .navigation,
+  .sidebar,
+  .ads,
+  .social-sharing,
+  .comment-form {
+    display: none !important;
+  }
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  opacity: 0.7;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20vh 15% 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-family: var(--font-primary);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+}
+
+.sales-counter {
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sales-counter::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #F1C40F;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Featured Products Styles */
+.featured-products {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  color: var(--color-dark);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
+  border-radius: 2px;
+}
+
+.section-title p {
+  color: var(--color-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.product-image {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  overflow: hidden;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.product-badge.stock-limitado {
+  background: #F1C40F;
+  color: var(--color-dark);
+}
+
+.product-info {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.product-price .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.product-price .compare-at {
+  text-decoration: line-through;
+  color: #95a5a6;
+  margin-left: 8px;
+  font-size: 1rem;
+}
+
+.product-rating {
+  margin-bottom: 12px;
+  color: #f1c40f;
+  font-size: 0.9rem;
+}
+
+.add-to-cart {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-light);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,107,107,0.4);
+}
+
+.product-viewers {
+  font-size: 0.8rem;
+  color: #95a5a6;
+  text-align: center;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* FOMO Stock Badge */
+.stock-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(255,255,255,0.9);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #e74c3c;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stock-badge::before {
+  content: '⚠️';
+  font-size: 0.9rem;
+}
+
+/* Testimonials Styles */
+.testimonials {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.testimonials-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #34495e;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials-carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.testimonial-slide.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.testimonial-video {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  aspect-ratio: 16/9;
+  background: #000;
+}
+
+.testimonial-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.testimonial-video .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.testimonial-video .play-icon::before {
+  content: '▶';
+  font-size: 2rem;
+  color: #FF6B6B;
+}
+
+.testimonial-video:hover .play-icon {
+  background: rgba(255,255,255,0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.testimonial-video:hover .play-icon::before {
+  color: #FF6B6B;
+}
+
+.testimonial-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 15px;
+}
+
+.testimonial-text::before,
+.testimonial-text::after {
+  font-size: 2rem;
+  color: #FF6B6B;
+  opacity: 0.3;
+}
+
+.testimonial-text::before {
+  content: '"';
+  position: absolute;
+  top: -15px;
+  left: -10px;
+}
+
+.testimonial-text::after {
+  content: '"';
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FF6B6B;
+}
+
+.testimonial-author-info {
+  text-align: left;
+}
+
+.testimonial-author-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.testimonial-author-location {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.carousel-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carousel-nav button {
+  background: transparent;
+  border: 2px solid #FF6B6B;
+  color: #FF6B6B;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav button.active {
+  background: #FF6B6B;
+  width: 14px;
+  height: 14px;
+}
+
+.carousel-nav button:hover:not(.active) {
+  background: rgba(255,107,107,0.1);
+  transform: scale(1.2);
+}
+
+.see-all-reviews {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: #FF6B6B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.see-all-reviews:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .testimonial-video {
+    max-width: 100%;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+/* AdSense Styles */
+.adsense-leaderboard {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.adsense-placeholder {
+  background: #f8f9fa;
+  border: 1px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.adsense-placeholder:hover {
+  background: #f0f0f0;
+  border-color: #adb5bd;
+}
+
+.adsense-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.adsense-content {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-center;
+  color: #6c757d;
+  font-style: italic;
+}
+
+@media (max-width: 991px) {
+  .adsense-leaderboard {
+    display: none;
+  }
+}
+
+/* Value Proposition Styles */
+.value-proposition {
+  padding: 50px 0;
+  background-color: #fafafa;
+}
+
+.value-proposition .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.value-proposition .section-title h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  color: var(--color-dark);
+  margin-bottom: 15px;
+}
+
+.value-proposition .section-title p {
+  color: var(--color-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.value-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.value-card {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.value-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Icon animations on scroll */
+.value-card.animate-in .value-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .value-cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .value-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Newsletter Styles */
+.newsletter {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+  text-align: center;
+}
+
+.newsletter .section-title {
+  margin-bottom: 30px;
+}
+
+.newsletter .section-title h2 {
+  font-family: var(--font-primary);
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.newsletter .section-title p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1 1 250px;
+  min-width: 250px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: var(--border-radius-pill);
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.newsletter-form input::placeholder {
+  color: #bdc3c7;
+}
+
+.newsletter-form button {
+  flex: 0 0 auto;
+  padding: 16px 30px;
+  background: rgba(0,0,0,0.2);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-pill);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.newsletter-form button:hover {
+  background: rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.newsletter-success,
+.newsletter-error {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 600;
+  display: none;
+}
+
+.newsletter-success {
+  background: rgba(0,0,0,0.2);
+}
+
+.newsletter-error {
+  background: rgba(255,0,0,0.2);
+}
+
+.newsletter-perks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.newsletter-perk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.newsletter-perk::before {
+  content: '✓';
+  color: #FFD700;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: var(--color-dark);
+  color: #ecf0f1;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.footer-column h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--color-primary);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footer-column p {
+  color: #bdc3c7;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #34495e;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #95a5a6;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #95a5a6;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+</style>
+
+  <!-- For AdSense placeholder styling -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    :root {
+      --color-primary: #ff6b6b;
+      --color-secondary: #4ecdc4;
+      --color-dark: #2c3e50;
+      --color-light: #ffffff;
+      --color-muted: #7f8c8d;
+      --color-border: #eee;
+      --color-bg-light: #fafafa;
+
+      --font-primary: 'Montserrat', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+
+      --transition-base: 0.3s ease;
+      --border-radius: 12px;
+      --border-radius-pill: 50px;
+      --box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      --box-shadow-hover: 0 12px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Hide AdSense placeholders initially if needed */
+    .adsense-placeholder {
+      min-height: 90px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="skip-to-content">Saltar al contenido</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <!-- Top Free Shipping Bar -->
+    <div class="header-top-bar">
+      🚚 Envío gratis en pedidos sobre $50 | <a href="#about">Sobre Nosotros</a> | <a href="#contact">Contáctanos</a>
+    </div>
+
+    <!-- Main Header -->
+    <div class="header-container">
+      <div class="logo">
+        <a href="#" style="text-decoration: none;">
+          <span style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--color-dark);">Jauria Shop</span>
+        </a>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Abrir menú móvil" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#home">Inicio</a>
+        <a href="#products">Productos</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <div class="cart-icon">
+        <a href="#cart" aria-label="Ver carrito">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div class="mobile-menu" style="display: none;">
+    <nav>
+      <a href="#home">Inicio</a>
+      <a href="#products">Productos</a>
+      <a href="#about">Sobre Nosotros</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" id="home">
+      <div class="hero-content">
+        <h1>Descubre los Productos que Todo el Mundo Quiere</h1>
+        <p>Tendencias virales respaldadas por miles de compradores satisfechos.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">Ver Colección Estrella</a>
+          <a href="#newsletter" class="btn btn-secondary">Únete a nuestra Comunidad</a>
+        </div>
+        <div class="sales-counter">
+          <span id="sales-count">0</span> vendidos hoy
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+      <div class="section-title">
+        <h2>Lo Que Está Rompiendo Internet Esta Semana</h2>
+        <p>Los productos más virales del momento, seleccionados especialmente para ti.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-badge">Tendencia</div>
+          <div class="product-image">
+            <img src="https://via.placeholder.com/400x400.png?texto=Producto+1" alt="Producto viral 1">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gadget Inteligente Multifunción</h3>
+            <div class="product-price">
+              <span class="compare-at">$49.99</span>
+              <span class="price">$29.99</span>
+            </div>
+            <div class="product-rating">
+              ★★★★★
+            </div>
+            <div class="stock-badge">
+              Solo quedan 3 unidades
+            </div>
+            <button class="add-to-cart" data-product-id="1" data-title="Gadget Inteligente Multifunción">
+              Agregar al carrito
+            </button>
+            <div class="product-viewers">
+              12+ personas viendo esto ahora
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-badge stock-limitado">Stock Limitado</div>
+          <div class="product-image">
+            <img src="https://via.placeholder.com/400x400.png?texto=Producto+2" alt="Producto viral 2">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Set de Herramientas DIY Premium</h3>
+            <div class="product-price">
+              <span class="compare-at">$79.99</span>
+              <span class="price">$49.99</span>
+            </div>
+            <div class="product-rating">
+              ★★★★☆
+            </div>
+            <div class="stock-badge">
+              Solo quedan 2 unidades
+            </div>
+            <button class="add-to-cart" data-product-id="2" data-title="Set de Herramientas DIY Premium">
+              Agregar al carrito
+            </button>
+            <div class="product-viewers">
+              8+ personas viendo esto ahora
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-badge">Más Vendido</div>
+          <div class="product-image">
+            <img src="https://via.placeholder.com/400x400.png?texto=Producto+3" alt="Producto viral 3">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Luz LED Ambiental con Control por App</h3>
+            <div class="product-price">
+              <span class="compare-at">$39.99</span>
+              <span class="price">$24.99</span>
+            </div>
+            <div class="product-rating">
+              ★★★★★
+            </div>
+            <div class="stock-badge">
+              Solo quedan 5 unidades
+            </div>
+            <button class="add-to-cart" data-product-id="3" data-title="Luz LED Ambiental con Control por App">
+              Agregar al carrito
+            </button>
+            <div class="product-viewers">
+              15+ personas viendo esto ahora
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-badge">Tendencia</div>
+          <div class="product-image">
+            <img src="https://via.placeholder.com/400x400.png?texto=Producto+4" alt="Producto viral 4">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Organizador de Escritorio Ergonómico</h3>
+            <div class="product-price">
+              <span class="compare-at">$24.99</span>
+              <span class="price">$14.99</span>
+            </div>
+            <div class="product-rating">
+              ★★★★☆
+            </div>
+            <div class="stock-badge">
+              Solo quedan 7 unidades
+            </div>
+            <button class="add-to-cart" data-product-id="4" data-title="Organizador de Escritorio Ergonómico">
+              Agregar al carrito
+            </button>
+            <div class="product-viewers">
+              6+ personas viendo esto ahora
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-title">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <p>Experiencias reales de personas que ya disfrutan de nuestros productos virales.</p>
+      </div>
+
+      <div class="testimonials-intro">
+        Miles de personas ya están disfrutando de estos productos
+      </div>
+
+      <div class="testimonials-carousel">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-slide active">
+          <div class="testimonial-video">
+            <video playsinline muted poster="https://via.placeholder.com/400x225.png?texto=Video+Testimonio">
+              <!-- Video source would go here -->
+            </video>
+            <div class="play-icon" onclick="this.previousElementSibling.play(); this.style.display='none';">
+              ▶
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "¡Este gadget cambió mi vida! Lo uso todos los días y mis amigos no paran de preguntarme dónde lo conseguí. La calidad es increíble y el precio fue una verdadera ganga."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://via.placeholder.com/60x60.png?texto=Ana" alt="Ana G.">
+              <div class="testimonial-author-info">
+                <div class="testimonial-author-name">Ana G.</div>
+                <div class="testimonial-author-location">Madrid, España</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-video">
+            <video playsinline muted poster="https://via.placeholder.com/400x225.png?texto=Video+Testimonio+2">
+            </video>
+            <div class="play-icon" onclick="this.previousElementSibling.play(); this.style.display='none';">
+              ▶
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Compré el set de herramientas para un proyecto en casa y terminé usando mucho más de lo que pensé. La calidad profesional a este precio es imposible de encontrar en otro lugar."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://via.placeholder.com/60x60.png?texto=Carlos" alt="Carlos M.">
+              <div class="testimonial-author-info">
+                <div class="testimonial-author-name">Carlos M.</div>
+                <div class="testimonial-author-location">Barcelona, España</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-video">
+            <video playsinline muted poster="https://via.placeholder.com/400x225.png?texto=Video+Testimonio+3">
+            </video>
+            <div class="play-icon" onclick="this.previousElementSibling.play(); this.style.display='none';">
+              ▶
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "La luz LED es perfecta para mi estudio. Puedo cambiar el color según mi estado de ánimo y la aplicación hace que sea súper fácil de controlar. 100% recomendado."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://via.placeholder.com/60x60.png?texto=Lucía" alt="Lucía R.">
+              <div class="testimonial-author-info">
+                <div class="testimonial-author-name">Lucía R.</div>
+                <div class="testimonial-author-location">Valencia, España</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <button aria-label="Diapositiva 1" class="active"></button>
+        <button aria-label="Diapositiva 2"></button>
+        <button aria-label="Diapositiva 3"></button>
+      </div>
+
+      <a href="#testimonios" class="see-all-reviews">
+        Ver todas las reseñas verificadas →
+      </a>
+    </section>
+
+    <!-- AdSense Leaderboard -->
+    <section class="adsense-leaderboard">
+      <div class="adsense-placeholder">
+        <div class="adsense-label">Anuncio patrocinado</div>
+        <div class="adsense-content">
+          <!-- Actual AdSense code will be loaded via JavaScript -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-TU_ID_AQUI"
+               data-ad-slot="TU_SLOT_AQUI"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-proposition">
+      <div class="section-title">
+        <h2>Por Qué Elegirnos</h2>
+        <p>Nos enfocamos en ofrecerte la mejor experiencia de compra con productos que realmente marcan tendencia.</p>
+      </div>
+
+      <div class="value-cards">
+        <!-- Envío Gratis -->
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h3>Envío Gratis</h3>
+          <p>En todos los pedidos superiores a $50. Sin sorpresas en el checkout.</p>
+        </div>
+
+        <!-- Pago Seguro -->
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Pago 100% Seguro</h3>
+          <p>Protegemos tu información con encriptación SSL de grado bancario.</p>
+        </div>
+
+        <!-- Devoluciones Fáciles -->
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-undo"></i>
+          </div>
+          <h3>Devoluciones Fáciles</h3>
+          <p>30 días para devolver cualquier producto, sin preguntas.</p>
+        </div>
+
+        <!-- Soporte 24/7 -->
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Soporte 24/7</h3>
+          <p>Nuestro equipo está siempre disponible para ayudarte en lo que necesites.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <div class="section-title">
+        <h2>Únete a la Comunidad de Tendencias</h2>
+        <p>Recibe alertas de productos virales antes que nadie + 10% de descuento en tu primera compra.</p>
+      </div>
+
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <input type="email"
+               id="newsletter-email"
+               placeholder="tuemail@ejemplo.com"
+               required>
+        <button type="submit">Obtener Mi Descuento</button>
+      </form>
+
+      <div id="newsletter-success" class="newsletter-success">
+        ¡Gracias por suscribirte! Revisa tu correo para obtener tu descuento.
+      </div>
+
+      <div id="newsletter-error" class="newsletter-error">
+        Hubo un error. Por favor intenta de nuevo.
+      </div>
+
+      <div class="newsletter-perks">
+        <div class="newsletter-perk">Acceso anticipado a productos virales</div>
+        <div class="newsletter-perk">Descuentos exclusivos para suscriptores</div>
+        <div class="newsletter-perk">Consejos de tendencias y estilo</div>
+        <div class="newsletter-perk">Invitaciones a eventos especiales</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Logo and Mission -->
+      <div class="footer-column">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <a href="#" style="text-decoration: none;">
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700; color: #ff6b6b;">Jauria Shop</span>
+          </a>
+        </div>
+        <p>Descubriendo y compartiendo las últimas tendencias en productos innovadores para mejorar tu vida diaria.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#products">Colecciones</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
+          <li><a href="#shipping">Política de Envíos</a></li>
+          <li><a href="#terms">Términos y Condiciones</a></li>
+          <li><a href="#privacy">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal and Help -->
+      <div class="footer-column">
+        <h3>Legal y ayuda</h3>
+        <ul>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+          <li><a href="#support">Soporte</a></li>
+          <li><a href="#returns">Devoluciones y Reembolsos</a></li>
+          <li><a href="#security">Seguridad y Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Jauria Shop. Todos los derechos reservados.</p>
+      <p>
+        <a href="#terms">Términos</a> |
+        <a href="#privacy">Privacidad</a> |
+        <a href="#about">Sobre Nosotros</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script>
+/*
+  Theme JavaScript - Jauria Viral HTML Site
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize mobile menu
+  initMobileMenu();
+
+  // Initialize header scroll effects
+  initHeaderScroll();
+
+  // Initialize lazy loading for images (if not native)
+  initLazyLoading();
+
+  // Initialize smooth scroll for anchor links
+  initSmoothScroll();
+
+  // Initialize cart functionality
+  initCart();
+
+  // Initialize announcement bar dismiss
+  initAnnouncementBar();
+
+  // Initialize testimonials carousel
+  initTestimonialsCarousel();
+
+  // Initialize sales counter
+  initSalesCounter();
+
+  // Initialize newsletter form
+  initNewsletterForm();
+
+  // Initialize product viewers counter
+  initProductViewers();
+
+  // Initialize add to cart buttons
+  initAddToCartButtons();
+
+  // Set current year in footer
+  setCurrentYear();
+});
+
+/* Mobile Menu */
+function initMobileMenu() {
+  const mobileToggle = document.querySelector('.mobile-menu-toggle');
+  const headerNav = document.querySelector('.site-header nav');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (!mobileToggle || !headerNav || !mobileMenu) return;
+
+  mobileToggle.addEventListener('click', function() {
+    const isNavOpen = headerNav.classList.toggle('open');
+    const isMenuOpen = mobileMenu.classList.toggle('open');
+    mobileToggle.setAttribute('aria-expanded', isMenuOpen);
+    mobileToggle.setAttribute('aria-label', isMenuOpen ? 'Cerrar menú' : 'Abrir menú');
+  });
+
+  // Close menu when clicking a link
+  const navLinks = document.querySelectorAll('.site-header nav a, .mobile-menu nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (headerNav.classList.contains('open') || mobileMenu.classList.contains('open')) {
+        headerNav.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        mobileToggle.setAttribute('aria-expanded', false);
+        mobileToggle.setAttribute('aria-label', 'Abrir menú');
       }
-      </script>
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Jauria - Productos Exclusivos de Dropshipping",
-        "url": "https://wmsraw.github.io/Jauria/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://wmsraw.github.io/Jauria/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const header = document.querySelector('header');
+    const isClickInside = header.contains(e.target);
+    const isMenuOpen = headerNav.classList.contains('open') || mobileMenu.classList.contains('open');
+
+    if (!isClickInside && isMenuOpen) {
+      headerNav.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded', false);
+      mobileToggle.setAttribute('aria-label', 'Abrir menú');
+    }
+  });
+}
+
+/* Header Scroll Effects */
+function initHeaderScroll() {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  let lastScrollY = window.pageYOffset;
+
+  window.addEventListener('scroll', function() {
+    const scrollY = window.pageYOffset;
+
+    if (scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+
+    lastScrollY = scrollY;
+  });
+}
+
+/* Lazy Loading for Images */
+function initLazyLoading() {
+  if ('loading' in HTMLImageElement.prototype) {
+    // Browser supports native lazy loading
+    return;
+  }
+
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+  if (lazyImages.length === 0) return;
+
+  const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  lazyImages.forEach(img => {
+    lazyLoadObserver.observe(img);
+  });
+}
+
+/* Smooth Scroll for Anchor Links */
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+
+      if (target) {
+        e.preventDefault();
+
+        const headerHeight = document.querySelector('header') ?
+          document.querySelector('header').offsetHeight : 0;
+
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+
+/* Cart Functionality */
+function initCart() {
+  // Update cart count from localStorage (simulated)
+  updateCartCount();
+
+  // Listen for cart updates
+  document.addEventListener('cartUpdated', updateCartCount);
+}
+
+function updateCartCount() {
+  const cartCount = document.querySelector('.header .cart-icon .count');
+  if (cartCount) {
+    // In a real implementation, this would read from localStorage or cookies
+    // For demo, we'll simulate with a random number
+    const count = Math.floor(Math.random() * 10);
+    cartCount.textContent = count;
+    // Hide cart count if zero
+    cartCount.parentElement.style.display = count > 0 ? 'flex' : 'none';
+  }
+}
+
+/* Announcement Bar Dismiss */
+function initAnnouncementBar() {
+  const announcementBar = document.querySelector('.header-top-bar');
+  if (!announcementBar) return;
+
+  // Check if user has dismissed it before
+  if (localStorage.getItem('announcementDismissed') === 'true') {
+    announcementBar.style.display = 'none';
+    return;
+  }
+
+  // Add close button if not present
+  if (!announcementBar.querySelector('.announcement-close')) {
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'announcement-close';
+    closeBtn.innerHTML = '&times;';
+    closeBtn.setAttribute('aria-label', 'Cerrar anuncio');
+    closeBtn.style.cssText = `
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      font-size: 1.8rem;
+      color: inherit;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+    `;
+    announcementBar.style.position = 'relative';
+    announcementBar.appendChild(closeBtn);
+
+    closeBtn.addEventListener('click', function() {
+      announcementBar.style.display = 'none';
+      localStorage.setItem('announcementDismissed', 'true');
+    });
+  }
+}
+
+/* Testimonials Carousel */
+function initTestimonialsCarousel() {
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const navButtons = document.querySelectorAll('.carousel-nav button');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+    navButtons.forEach((button, i) => {
+      button.classList.toggle('active', i === index);
+    });
+    currentIndex = index;
+  }
+
+  navButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      showSlide(index);
+    });
+  });
+
+  // Auto-advance every 5 seconds
+  let autoAdvance = setInterval(() => {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    showSlide(nextIndex);
+  }, 5000);
+
+  // Pause on hover
+  const carousel = document.querySelector('.testimonials-carousel');
+  carousel.addEventListener('mouseenter', function() {
+    clearInterval(autoAdvance);
+  });
+  carousel.addEventListener('mouseleave', function() {
+    autoAdvance = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }, 5000);
+  });
+}
+
+/* Sales Counter Simulation */
+function initSalesCounter() {
+  const counter = document.getElementById('sales-count');
+  if (!counter) return;
+
+  let count = parseInt(Math.random() * 100) + 50; // Starting between 50-150
+
+  function updateCounter() {
+    // Increment by random amount every 2-5 seconds
+    setTimeout(function() {
+      count += Math.floor(Math.random() * 3) + 1;
+      counter.textContent = count.toLocaleString();
+      updateCounter();
+    }, Math.random() * 3000 + 2000);
+  }
+
+  updateCounter();
+}
+
+/* Newsletter Form */
+function initNewsletterForm() {
+  const form = document.getElementById('newsletter-form');
+  const emailInput = document.getElementById('newsletter-email');
+  const successMsg = document.getElementById('newsletter-success');
+  const errorMsg = document.getElementById('newsletter-error');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      showError('Por favor ingresa tu correo electrónico');
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      showError('Por favor ingresa un correo electrónico válido');
+      return;
+    }
+
+    // Simulate API call
+    submitNewsletter(email);
+  });
+
+  function showSuccess(message) {
+    successMsg.textContent = message;
+    successMsg.style.display = 'block';
+    errorMsg.style.display = 'none';
+    form.reset();
+  }
+
+  function showError(message) {
+    errorMsg.textContent = message;
+    errorMsg.style.display = 'block';
+    successMsg.style.display = 'none';
+  }
+
+  function submitNewsletter(email) {
+    // Show loading state
+    const submitBtn = form.querySelector('button');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Suscribiendo...';
+    submitBtn.disabled = true;
+
+    // Simulate network delay
+    setTimeout(() => {
+      // In a real implementation, this would call your newsletter service API
+      // For now, simulate success
+      showSuccess('¡Gracias por suscribirte! Revisa tu correo para obtener tu descuento del 10%.');
+
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }, 1500);
+  }
+}
+
+/* Product Viewers Counter */
+function initProductViewers() {
+  const viewerElements = document.querySelectorAll('.product-viewers');
+  viewerElements.forEach(el => {
+    const baseCount = parseInt(el.textContent.match(/\d+/)[0]) || 10;
+    let currentCount = baseCount;
+
+    function updateViewers() {
+      setTimeout(() => {
+        // Random fluctuation
+        currentCount += Math.floor(Math.random() * 3) - 1;
+        if (currentCount < 5) currentCount = 5;
+        el.textContent = currentCount + '+ personas viendo esto ahora';
+        updateViewers();
+      }, Math.random() * 5000 + 3000);
+    }
+
+    updateViewers();
+  });
+}
+
+/* Add to Cart Buttons */
+function initAddToCartButtons() {
+  const buttons = document.querySelectorAll('.add-to-cart');
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productId = this.getAttribute('data-product-id');
+      const productTitle = this.getAttribute('data-title');
+
+      // Show loading state
+      const originalText = this.textContent;
+      this.textContent = 'Agregando...';
+      this.disabled = true;
+
+      // Add to cart via simulated AJAX
+      setTimeout(() => {
+        // Update cart count
+        const cartCount = document.querySelector('.header .cart-icon .count');
+        if (cartCount) {
+          cartCount.textContent = parseInt(cartCount.textContent || 0) + 1;
         }
-      }
-      </script>
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://wmsraw.github.io/Jauria/"
-        },{
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Productos",
-          "item": "https://wmsraw.github.io/Jauria/#productos"
-        }]
-      }
-      </script>
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "Product",
-              "name": "Camiseta Estampada Artística",
-              "image":
-  "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3w
-  xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-              "description": "Diseño único inspirado en arte contemporáneo. Algodón
-  orgánico premium, corte unisex, disponible en múltiples tallas.",
-              "sku": "JAU-001",
-              "brand": {
-                "@type": "Brand",
-                "name": "Jauria"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://jauria.com/producto1",
-                "priceCurrency": "USD",
-                "price": "29.99",
-                "priceValidUntil": "2026-12-31",
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "Product",
-              "name": "Reloj Inteligente Deportivo",
-              "image":
-  "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMj
-  A3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-              "description": "Monitor de frecuencia cardiada, GPS integrado,
-  resistencia al agua 5ATM, batería de 7 días. Compatível con iOS y Android.",
-              "sku": "JAU-002",
-              "brand": {
-                "@type": "Brand",
-                "name": "Jauria"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://jauria.com/producto2",
-                "priceCurrency": "USD",
-                "price": "89.99",
-                "priceValidUntil": "2026-12-31",
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "Product",
-              "name": "Mochila Urbana Resistente",
-              "image":
-  "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3w
-  xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-              "description": "Material impermeable de alta densidad, puerto USB
-  integrado, compartimento para laptop 15", correas ergonómicas acolchadas.",
-              "sku": "JAU-003",
-              "brand": {
-                "@type": "Brand",
-                "name": "Jauria"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://jauria.com/producto3",
-                "priceCurrency": "USD",
-                "price": "45.99",
-                "priceValidUntil": "2026-12-31",
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "Product",
-              "name": "Taza Mágica Termosensible",
-              "image":
-  "https://images.unsplash.com/photo-1593642532403-3156654d0138?ixlib=rb-4.0.3&ixid=M3w
-  xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-              "description": "Cambia de color con líquidos calientes. Diseño sorpresa
-  que revela arte oculto. Capacidad 350ml, cerámica de alta calidad.",
-              "sku": "JAU-004",
-              "brand": {
-                "@type": "Brand",
-                "name": "Jauria"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://jauria.com/producto4",
-                "priceCurrency": "USD",
-                "price": "19.99",
-                "priceValidUntil": "2026-12-31",
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-          }
-        ]
-      }
-      </script>
-      <style>
-          /* Custom styles for better control */
-          :root {
-              --primary-color: #4f46e5;
-              --secondary-color: #10b981;
-              --accent-color: #f59e0b;
-              --dark-color: #1f2937;
-              --light-color: #f9fafb;
-          }
-          .btn-primary {
-              @apply bg-primary-color text-white px-6 py-3 rounded-lg font-medium
-  transition-all duration-300 hover:bg-primary-color/90 transform hover:-translate-y-1
-  shadow-md;
-          }
-          .btn-secondary {
-              @apply bg-secondary-color text-white px-6 py-3 rounded-lg font-medium
-  transition-all duration-300 hover:bg-secondary-color/90 transform
-  hover:-translate-y-1 shadow-md;
-          }
-          .btn-outline {
-              @apply border border-primary-color text-primary-color px-6 py-3
-  rounded-lg font-medium transition-all duration-300 hover:bg-primary-color/10
-  hover:-translate-y-1;
-          }
-          .product-card {
-              @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all
-  duration-300 hover:shadow-xl hover:-translate-y-2;
-          }
-          .product-image {
-              @apply w-full h-48 object-cover;
-          }
-          .section-title {
-              @apply text-3xl md:text-4xl font-bold text-center mb-12 text-dark-color
-  relative;
-          }
-          .section-title::after {
-              @apply content-[''] absolute bottom-[-8px] left-[50%] transform
-  -translate-x-1/2 w-24 h-0.5 bg-primary-color;
-          }
-          .feature-icon {
-              @apply w-12 h-12 bg-primary-color/10 rounded-full flex items-center
-  justify-center text-primary-color mb-4;
-          }
-          .testimonial {
-              @apply bg-light-color rounded-xl p-6 shadow-md border-l-4
-  border-primary-color;
-          }
-          .faq-item {
-              @apply border-b border-gray-200 last:border-b-0;
-          }
-          .faq-question {
-              @apply cursor-pointer flex items-center justify-between p-4 text-lg
-  font-medium text-dark-color transition-colors duration-200 hover:bg-gray-50;
-          }
-          .faq-answer {
-              @apply max-h-0 overflow-hidden transition-max-height duration-300
-  ease-out text-gray-600 p-0 px-4 pt-0 pb-4;
-          }
-          .faq-item.active .faq-answer {
-              @apply max-h-[200px] p-4 px-4 pt-0 pb-4;
-          }
-          .newsletter-input {
-              @apply w-full px-4 py-3 rounded-l-lg border border-gray-300
-  focus:outline-none focus:ring-2 focus:ring-primary-color;
-          }
-          .newsletter-btn {
-              @apply bg-primary-color text-white px-5 py-3 rounded-r-lg
-  hover:bg-primary-color/90 transition-colors duration-200;
-          }
-          /* Viral-specific styles */
-          .viral-badge {
-              @apply absolute top-2 right-2 flex items-center gap-1 bg-primary-color/90
-  text-white px-2 py-1 rounded text-xs;
-          }
-          .discount-badge {
-              @apply inline-block bg-primary-color/20 text-primary-color px-2 py-1
-  rounded text-xs mr-2;
-          }
-          .free-shipping {
-              @apply inline-flex items-center gap-1 text-green-600 text-sm;
-          }
-          .countdown-timer {
-              @apply inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2
-  rounded-lg mb-6;
-          }
-          .countdown-label {
-              @apply text-white/90 font-mono mr-2;
-          }
-          .countdown-value {
-              @apply text-white font-bold text-xl;
-          }
-          /* Mobile menu (from your original) */
-          .mobile-menu-toggle {
-              @apply text-gray-500 hover:text-primary-color;
-          }
-          .mobile-menu {
-              @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50
-  backdrop-blur-sm hidden md:hidden;
-          }
-          .mobile-menu-content {
-              @apply relative w-full max-w-md;
-          }
-          .mobile-menu-close {
-              @apply absolute top-0 right-0 mt-4 mr-4 text-gray-400 hover:text-white;
-          }
-          .mobile-menu-nav {
-              @apply mt-10 space-y-6;
-          }
-          .mobile-menu-link {
-              @apply block text-center text-xl font-bold text-white
-  hover:text-primary-color;
-          }
-      </style>
-  </head>
-  <body class="font-sans antialiased text-gray-900 bg-white">
-      <!-- Header (PRESERVED FROM YOUR ORIGINAL) -->
-      <header class="bg-white shadow-sm sticky top-0 z-50">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="flex justify-between h-16 items-center">
-                  <div class="flex-shrink-0">
-                      <a href="#" class="text-xl font-bold
-  text-primary-color">Jauria</a>
-                  </div>
-                  <nav class="hidden md:flex space-x-8">
-                      <a href="#hero" class="text-gray-600 hover:text-primary-color
-  transition-colors duration-200">Inicio</a>
-                      <a href="#viral-products" class="text-gray-600
-  hover:text-primary-color transition-colors duration-200">Tendencias</a>
-                      <a href="#beneficios" class="text-gray-600
-  hover:text-primary-color transition-colors duration-200">Beneficios</a>
-                      <a href="#testimonios" class="text-gray-600
-  hover:text-primary-color transition-colors duration-200">Testimonios</a>
-                      <a href="#faq" class="text-gray-600 hover:text-primary-color
-  transition-colors duration-200">FAQ</a>
-                  </nav>
-                  <div class="md:hidden">
-                      <button id="mobile-menu-btn" class="text-gray-500
-  hover:text-primary-color">
-                          <svg class="h-6 w-6" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                      </button>
-                  </div>
-              </div>
-              <!-- Mobile Menu -->
-              <div id="mobile-menu" class="mobile-menu hidden">
-                  <div class="mobile-menu-content">
-                      <button id="mobile-menu-close" class="mobile-menu-close"
-  aria-label="Cerrar menú">×</button>
-                      <nav class="mobile-menu-nav">
-                          <a href="#hero" class="mobile-menu-link">Inicio</a>
-                          <a href="#viral-products"
-  class="mobile-menu-link">Tendencias</a>
-                          <a href="#beneficios" class="mobile-menu-link">Beneficios</a>
-                          <a href="#testimonios"
-  class="mobile-menu-link">Testimonios</a>
-                          <a href="#faq" class="mobile-menu-link">FAQ</a>
-                      </nav>
-                  </div>
-              </div>
-          </div>
-      </header>
 
-      <!-- HERO SECTION OPTIMIZADO PARA VIRALIDAD (REPLACES YOUR ORIGINAL HERO) -->
-      <section id="hero" class="relative bg-gradient-to-b from-primary-color/5
-  via-transparent to-transparent">
-          <div class="absolute inset-0">
-              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ix
-  lib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fi
-  t=crop&w=1920&q=80" alt="Hero background" class="w-full h-full object-cover
-  opacity-30">
-          </div>
-          <div class="relative pt-20 pb-24 md:pt-28 md:pb-32">
-              <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                  <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white
-  mb-4 leading-tight shadow-md">
-                      🔥 Productos Virales de Esta Semana
-                  </h1>
-                  <p class="text-xl md:text-2xl text-white/90 mb-6 max-w-xl mx-auto
-  shadow-sm">
-                      Descubre los productos que están rompiendo TikTok y Instagram.
-  Stock limitado - ¡No te los pierdas!
-                  </p>
-                  <!-- CONTADOR DE URGENCIA -->
-                  <div class="countdown-timer">
-                      <span class="countdown-label">⏳ Oferta especial termina en:
-  </span>
-                      <span id="viral-countdown"
-  class="countdown-value">02:15:30</span>
-                  </div>
-                  <div class="flex flex-wrap justify-center gap-4 mt-6">
-                      <a href="#viral-products" class="btn-primary">Ver Tendencias</a>
-                      <a href="#beneficios" class="btn-outline">Por qué Elegirnos</a>
-                  </div>
-              </div>
-          </div>
-      </section>
+        // Show success message
+        this.textContent = '¡Agregado!';
+        setTimeout(() => {
+          this.textContent = originalText;
+          this.disabled = false;
+        }, 2000);
+      }, 1000);
+    });
+  });
+}
 
-      <!-- NUEVA SECCIÓN: PRODUCTOS VIRALES AGOSTO 2026 (INSERTED ABOVE ORIGINAL
-  PRODUCTS) -->
-      <section id="viral-products" class="py-16 bg-light-color">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="section-title">🔥 Tendencias Virales Esta Semana</h2>
-              <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-                  Selección de productos que están explotando en TikTok/Instagram.
-  Envío gratis en 5-10 días.
-              </p>
-              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  <!-- PRODUCTO VIRAL 1: Comedero Inteligente para Mascotas -->
-                  <div class="product-card group">
-                      <img src="https://images.unsplash.com/photo-1602286319142-3420709
-  05667?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80"
-                           alt="Comedero inteligente para mascotas con cámara"
-                           class="product-image transition-transform duration-300
-  group-hover:scale-105 loading-lazy decoding-async">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Comedero
-  Inteligente para Mascotas</h3>
-                          <p class="text-gray-500 mb-3 line-clamp-2">Con cámara HD,
-  audio bidireccional y programación por app. ¡Mira y habla con tu mascota desde
-  anywhere!</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$39.99</span>
-                              <span class="text-gray-400 line-through text-sm
-  ml-1">$59.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">33% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded">🔥 TikTok Viral</span>
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a
-  href="https://www.aliexpress.com/item/1005005921234567.html"
-                             class="btn-primary w-full hover:scale-[1.02]
-  transition-transform duration-200">
-                              Ver Oferta AliExpress
-                          </a>
-                      </div>
-                  </div>
+/* Set Current Year in Footer */
+function setCurrentYear() {
+  const yearElement = document.getElementById('current-year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+}
 
-                  <!-- PRODUCTO VIRAL 2: Cargador Magnético 3-en-1 -->
-                  <div class="product-card group">
-                      <img src="https://images.unsplash.com/photo-1610945265064-0e74b2f
-  40f4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80"
-                           alt="Cargador inalámbrico magnético para iPhone y AirPods"
-                           class="product-image transition-transform duration-300
-  group-hover:scale-105 loading-lazy decoding-async">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Cargador
-  Magnético 3-en-1</h3>
-                          <p class="text-gray-500 mb-3 line-clamp-2">Carga
-  simultáneamente tu iPhone, AirPods y Apple Watch. Diseño elegante tipo "stand".</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$29.99</span>
-                              <span class="text-gray-400 line-through text-sm
-  ml-1">$44.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">33% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded">📱 Made for TikTok</span>
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a
-  href="https://www.cjdropshipping.com/product/123456-magnetic-3in1-charger"
-                             class="btn-primary w-full hover:scale-[1.02]
-  transition-transform duration-200">
-                              Ver Oferta CJDropshipping
-                          </a>
-                      </div>
-                  </div>
+/* Helper: Debounce function */
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
 
-                  <!-- PRODUCTO VIRAL 3: Taza Mágica Arte K-Pop -->
-                  <div class="product-card group">
-                      <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b
-  5b4a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80"
-                           alt="Taza mágica que revela arte K-pop con líquido caliente"
+/* Helper: Throttle function */
+function throttle(func, limit) {
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
+}
 
-                           class="product-image transition-transform duration-300
-  group-hover:scale-105 loading-lazy decoding-async">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Taza
-  Mágica Arte K-Pop</h3>
-                          <p class="text-gray-500 mb-3 line-clamp-2">Revela diseños
-  ocultos de grupos populares cuando se llena con líquido caliente. ¡Colección
-  limitada!</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$24.99</span>
-                              <span class="text-gray-400 line-through text-sm
-  ml-1">$34.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">28% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded">💖 K-Pop Trend</span>
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a
-  href="https://www.spocket.co/products/kpop-magic-mug-789012"
-                             class="btn-primary w-full hover:scale-[1.02]
-  transition-transform duration-200">
-                              Ver Oferta Spocket (US Warehouse)
-                          </a>
-                      </div>
-                  </div>
+// Export functions for use if needed
+window.jauriaSite = {
+  initMobileMenu,
+  initHeaderScroll,
+  initLazyLoading,
+  initSmoothScroll,
+  initCart,
+  updateCartCount,
+  initAnnouncementBar,
+  initTestimonialsCarousel,
+  initSalesCounter,
+  initNewsletterForm,
+  initProductViewers,
+  initAddToCartButtons,
+  setCurrentYear,
+  debounce,
+  throttle
+};
+</script>
+  <!-- AdSense Integration JS -->
+  <script>
+/*
+  AdSense Integration - Asynchronous and safe loading of Google AdSense
+  Designed to prevent render-blocking and layout shift
+*/
 
-                  <!-- PRODUCTO VIRAL 4: Lámpara LED Controlada por Voz -->
-                  <div class="product-card group">
-                      <img src="https://images.unsplash.com/photo-1586190848861-99aa4a1
-  71e90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80"
-                           alt="Lámpara de mesa LED con control por voz Alexa/Google"
-                           class="product-image transition-transform duration-300
-  group-hover:scale-105 loading-lazy decoding-async">
-                      <div class="p-6">
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Lámpara
-  Inteligente Voice-Control</h3>
-                          <p class="text-gray-500 mb-3 line-clamp-2">Cambia color,
-  brillo y programa horarios con solo tu voz. Compatible con Alexa y Google Home.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$44.99</span>
-                              <span class="text-gray-400 line-through text-sm
-  ml-1">$64.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">31% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded">🏠 Smart Home Viral</span>
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a
-  href="https://www.aliexpress.com/item/1005005921234568.html"
-                             class="btn-primary w-full hover:scale-[1.02]
-  transition-transform duration-200">
-                              Ver Oferta AliExpress
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+(function() {
+  // Prevent multiple initializations
+  if (window.aurijaAdsenseInitialized) return;
+  window.aurijaAdsenseInitialized = true;
 
-      <!-- SECCIÓN DESTACADA (TUS PRODUCTOS ORIGINALES - MEJORADOS) -->
-      <section id="productos" class="py-16 bg-light-color">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="section-title">Productos Destacados</h2>
-              <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-                  Selección cuidadosamente curada de los mejores productos de
-  dropshipping para elevar tu estilo diario.
-              </p>
-              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  <!-- PRODUCTO 1 (MEJORADO) -->
-                  <div class="product-card">
-                      <img src="https://images.unsplash.com/photo-1521572163474-6864f9c
-  f17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80" alt="Camiseta estampada artística" class="product-image
-  loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Camiseta
-  Estampada Artística</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Diseño único
-  inspirado en arte contemporáneo. Algodón orgánico premium, corte unisex, disponible
-  en múltiples tallas.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$29.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$39.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">25% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto1" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-                  <!-- PRODUCTO 2 (MEJORADO) -->
-                  <div class="product-card">
-                      <img
-  src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3
-  wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-  alt="Reloj inteligente deportivo" class="product-image loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Reloj
-  Inteligente Deportivo</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Monitor de
-  frecuencia cardiada, GPS integrado, resistencia al agua 5ATM, batería de 7 días.
-  Compatível con iOS y Android.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$89.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$119.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">25% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto2" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-                  <!-- PRODUCTO 3 (MEJORADO) -->
-                  <div class="product-card">
-                      <img src="https://images.unsplash.com/photo-1578662996442-48f6010
-  3fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80" alt="Mochila urbana resistente" class="product-image
-  loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Mochila
-  Urbana Resistente</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Material
-  impermeable de alta densidad, puerto USB integrado, compartimento para laptop 15",
-  correas ergonómicas acolchadas.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$45.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$59.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">23% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto3" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-                  <!-- PRODUCTO 4 (MEJORADO) -->
-                  <div class="product-card">
-                      <img src="https://images.unsplash.com/photo-1593642532403-3156654
-  d0138?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80" alt="Taza mágica termo sensible" class="product-image
-  loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Taza
-  Mágica Termosensible</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Cambia de color
-  con líquidos calientes. Diseño sorpresa que revela arte oculto. Capacidad 350ml,
-  cerámica de alta calidad.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$19.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$24.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">20% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto4" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-                  <!-- PRODUCTO 5 (MEJORADO) -->
-                  <div class="product-card">
-                      <img src="https://images.unsplash.com/photo-1583454120514-4074aa8
-  61e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80" alt="Auriculares inalámbricos premium"
-  class="product-image loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2
-  line-clamp-2">Auriculares Inalámbricos Premium</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Cancelación activa
-  de ruido, sonido Hi-Fi, carga rápida USB-C, resistencia al sudor IPX5, 30 horas de
-  autonomía total.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$79.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$99.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">20% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto5" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-                  <!-- PRODUCTO 6 (MEJORADO) -->
-                  <div class="product-card">
-                      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99
-  b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=f
-  ormat&fit=crop&w=400&q=80" alt="Set de utensilios de cocina silicona"
-  class="product-image loading-lazy decoding-async">
-                      <div class="p-6">
-                          <div class="viral-badge">
-                              <span>🔥</span>
-                              <span>Tendencia</span>
-                          </div>
-                          <h3 class="text-lg font-semibold mb-2 line-clamp-2">Set de
-  Utensilios de Cocina Silicona</h3>
-                          <p class="text-gray-500 mb-4 line-clamp-2">Resistente al
-  calor hasta 230°C, antiadherente, apto para lavavajillas. Incluye espátula, cuchara,
-  pinzas y batidor.</p>
-                          <div class="flex items-baseline mb-4">
-                              <span class="text-2xl font-bold text-primary-color
-  mr-2">$24.99</span>
-                              <span class="text-gray-500 line-through text-sm
-  ml-1">$32.99</span>
-                              <span class="text-xs bg-primary-color/20
-  text-primary-color px-2 py-1 rounded ml-2">24% OFF</span>
-                          </div>
-                          <div class="mt-2 flex items-center gap-2 text-sm">
-                              <span class="text-xs text-green-600">✈️ Envío
-  gratis</span>
-                          </div>
-                          <a href="https://jauria.com/producto6" class="btn-primary
-  w-full">Comprar Ahora</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+  // Configuration - these should be replaced with your actual AdSense IDs
+  const ADSENSE_CLIENT = 'ca-pub-TU_ID_AQUI'; // Replace with your AdSense client ID
+  const ADSENSE_ENABLED = true; // Set to false to disable AdSense
 
-      <!-- BENEFICIOS SECTION (PRESERVED FROM YOUR ORIGINAL) -->
-      <section id="beneficios" class="py-16">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="section-title">¿Por Qué Comprar con Nosotros?</h2>
-              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                  <div class="text-center">
-                      <div class="feature-icon">
-                          <svg class="h-6 w-6" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4 2 2 0 000 4zm-6 0a2 2 0 1000-4 2 2 0 000
-  4zm6 0a2 2 0 1000-4 2 2 0 000 4zm6 0a2 2 0 1000-4 2 2 0 000 4z"></path></svg>
-                      </div>
-                      <h3 class="text-lg font-semibold mb-3">Envío Gratis Mundial</h3>
-                      <p class="text-gray-600">Sin costo adicional en todos los
-  pedidos, sin importar dónde estés. Llegamos a más de 100 países.</p>
-                  </div>
-                  <div class="text-center">
-                      <div class="feature-icon">
-                          <svg class="h-6 w-6" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895
-  3-2-1.343-2-3-2zm0-6c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zm0
-  10c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"></path></svg>
-                      </div>
-                      <h3 class="text-lg font-semibold mb-3">Pago 100% Seguro</h3>
-                      <p class="text-gray-600">Encriptación SSL de nivel bancario.
-  Aceptamos tarjetas, PayPal y otros métodos confiables. Protección al comprador
-  garantizada.</p>
-                  </div>
-                  <div class="text-center">
-                      <div class="feature-icon">
-                          <svg class="h-6 w-6" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M9 12l2 2 4-4M7.5 19h9"></path></svg>
-                      </div>
-                      <h3 class="text-lg font-semibold mb-3">Devoluciones Fáciles</h3>
-                      <p class="text-gray-600">Política de devolución de 30 días sin
-  preguntas. Reembolso completo o cambio, tú decides. Nos encargamos de la logística
-  inversa.</p>
-                  </div>
-                  <div class="text-center">
-                      <div class="feature-icon">
-                          <svg class="h-6 w-6" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                      </div>
-                      <h3 class="text-lg font-semibold mb-3">Atención
-  Personalizada</h3>
-                      <p class="text-gray-600">Equipo de soporte disponible 24/7 vía
-  chat, email y teléfono. Resolvemos tus dudas en menos de 2 horas.</p>
-                  </div>
-              </div>
-          </div>
-      </section>
+  // Exit if AdSense is not enabled or not configured
+  if (!ADSENSE_ENABLED || ADSENSE_CLIENT === 'ca-pub-TU_ID_AQUI') {
+    console.info('AdSense not configured or disabled');
+    return;
+  }
 
-      <!-- TESTIMONIOS SECTION (PRESERVED FROM YOUR ORIGINAL) -->
-      <section id="testimonios" class="py-16 bg-light-color">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-              <div class="grid gap-6 mt-10">
-                  <div class="testimonial">
-                      <p class="italic text-gray-700 mb-4">"¡La camiseta llegó antes de
-  lo esperado y la calidad es excepcional! El diseño es exactamente como en las fotos.
-  Definitivamente volveré a comprar."</p>
-                      <div class="flex items-center">
-                          <img src="https://images.unsplash.com/photo-1494790108377-be9
-  c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&au
-  to=format&fit=crop&w=100&q=80" alt="María G." class="w-12 h-12 rounded-full
-  object-cover">
-                          <div class="ml-3">
-                              <h4 class="font-semibold">María G., Madrid</h4>
-                              <p class="text-sm text-gray-500">Compró: Camiseta
-  Estampada Artística</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="testimonial">
-                      <p class="italic text-gray-700 mb-4">"El reloj inteligente superó
-  mis expectativas. La batería dura una semana completa y el monitor de sueño es muy
-  preciso. Relación calidad-precio imbatible."</p>
-                      <div class="flex items-center">
-                          <img src="https://images.unsplash.com/photo-1500648767791-00d
-  cc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&au
-  to=format&fit=crop&w=100&q=80" alt="Carlos R." class="w-12 h-12 rounded-full
-  object-cover">
-                          <div class="ml-3">
-                              <h4 class="font-semibold">Carlos R., Barcelona</h4>
-                              <p class="text-sm text-gray-500">Compró: Reloj
-  Inteligente Deportivo</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="testimonial">
-                      <p class="italic text-gray-700 mb-4">"La mochila es perfecta para
-  mi día a día. El puerto USB es un salvavidas y el material realmente repele el agua.
-  Muy recomendada para estudiantes y profesionales."</p>
-                      <div class="flex items-center">
-                          <img src="https://images.unsplash.com/photo-1507003211169-0a1
-  dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&au
-  to=format&fit=crop&w=100&q=80" alt="Ana L." class="w-12 h-12 rounded-full
-  object-cover">
-                          <div class="ml-3">
-                              <h4 class="font-semibold">Ana L., México DF</h4>
-                              <p class="text-sm text-gray-500">Compró: Mochila Urbana
-  Resistente</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="testimonial">
-                      <p class="italic text-gray-700 mb-4">"Me encantó la taza mágica.
-  Mi hijo se sorprende cada vez que cambia de color con el chocolate caliente. Producto
-  divertido y de buena calidad."</p>
-                      <div class="flex items-center">
-                          <img src="https://images.unsplash.com/photo-1529626455594-4ff
-  0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&au
-  to=format&fit=crop&w=100&q=80" alt="Javier M." class="w-12 h-12 rounded-full
-  object-cover">
-                          <div class="ml-3">
-                              <h4 class="font-semibold">Javier M., Buenos Aires</h4>
-                              <p class="text-sm text-gray-500">Compró: Taza Mágica
-  Termosensible</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+  // Function to load AdSense script asynchronously
+  function loadAdSenseScript() {
+    // Check if already loaded
+    if (document.querySelector('script[src*="pagead2.googlesyndication.com"]')) {
+      return;
+    }
 
-      <!-- FAQ SECTION (PRESERVED FROM YOUR ORIGINAL) -->
-      <section id="faq" class="py-16">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="section-title">Preguntas Frecuentes</h2>
-              <div class="mt-10 space-y-2">
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>¿Cuánto tarda el envío?</span>
-                          <svg class="h-5 w-5 transition-transform duration-200"
-  id="faq-icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7
-  7-7-7"></path></svg>
-                      </div>
-                      <div class="faq-answer">
-                          <p class="text-gray-600">Los tiempos de envío varían según el
-  destino: 5-10 días hábiles para América Latina y Europa, 7-15 días para el resto del
-  mundo. Todos los envíos incluyen número de seguimiento.</p>
-                      </div>
-                  </div>
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>¿Las tallas son reales?</span>
-                          <svg class="h-5 w-5 transition-transform duration-200"
-  id="faq-icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7
-  7-7-7"></path></svg>
-                      </div>
-                      <div class="faq-answer">
-                          <p class="text-gray-600">Sí, nuestras tallas siguen
-  estándares internacionales. Cada producto incluye una guía de tallas detallada en su
-  descripción. En caso de duda, nuestro equipo puede ayudarte a elegir la talla
-  perfecta.</p>
-                      </div>
-                  </div>
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>¿Puedo cambiar o devolver un producto?</span>
-                          <svg class="h-5 w-5 transition-transform duration-200"
-  id="faq-icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7
-  7-7-7"></path></svg>
-                      </div>
-                      <div class="faq-answer">
-                          <p class="text-gray-600">¡Claro que sí! Tienes 30 días desde
-  la recepción para solicitar una devolución o cambio. El proceso es sencillo:
-  contáctanos, te enviamos una etiqueta de prepago y reembolsamos el monto total al
-  recibir el producto en nuestras instalaciones.</p>
-                      </div>
-                  </div>
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>¿Es seguro comprar en su sitio web?</span>
-                          <svg class="h-5 w-5 transition-transform duration-200"
-  id="faq-icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7
-  7-7-7"></path></svg>
-                      </div>
-                      <div class="faq-answer">
-                          <p class="text-gray-600">Totalmente seguro. Utilizamos
-  encriptación SSL de 256 bits, cumplimos con PCI DSS para pagos y nunca almacenamos
-  tus datos financieros. Nuestra política de privacidad protege tu información personal
-  en todo momento.</p>
-                      </div>
-                  </div>
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>¿Ofrecen descuentos por compra al por mayor?</span>
-                          <svg class="h-5 w-5 transition-transform duration-200"
-  id="faq-icon-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path
-  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7
-  7-7-7"></path></svg>
-                      </div>
-                      <div class="faq-answer">
-                          <p class="text-gray-600">Sí, ofrecemos precios especiales
-  para compras al por mayor (10+ unidades del mismo producto). Contáctanos vía email o
-  chat para obtener un presupuesto personalizado según tus necesidades.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
 
-      <!-- NEWSLETTER SECTION (PRESERVED FROM YOUR ORIGINAL) -->
-      <section class="py-12 bg-primary-color">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 class="text-3xl font-bold text-white mb-6">Únete a Nuestra
-  Comunidad</h2>
-              <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                  Suscríbete para recibir acceso anticipado a nuevos productos, ofertas
-  exclusivas y contenido de estilo de vida.
-              </p>
-              <form action="#" method="POST" class="max-w-xl mx-auto flex flex-col
-  md:flex-row items-stretch">
-                  <input type="email" name="email" placeholder="Tu correo electrónico"
-  required class="newsletter-input">
-                  <button type="submit" class="newsletter-btn">Suscribirme</button>
-              </form>
-              <p class="mt-4 text-xs text-white/70">Prometemos no spam. Puedes darte de
-  baja en cualquier momento.</p>
-          </div>
-      </section>
+    script.onload = function() {
+      console.info('AdSense script loaded successfully');
+      // Initialize any existing ads
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    };
 
-      <!-- FOOTER SECTION (PRESERVED FROM YOUR ORIGINAL) -->
-      <footer class="bg-dark-color text-white py-12">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-                  <div>
-                      <h3 class="text-xl font-semibold mb-4">Jauria</h3>
-                      <p class="text-gray-300 mb-4">Productos exclusivos de
-  dropshipping con estilo único y calidad garantizada. Envío gratis a todo el
-  mundo.</p>
-                      <div class="flex space-x-4">
-                          <a href="#" class="text-gray-300 hover:text-white
-  transition-colors duration-200">
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0
-  00-1-1h-5"></path></svg>
-                          </a>
-                          <a href="#" class="text-gray-300 hover:text-white
-  transition-colors duration-200">
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V7a2 2 0
-  012-2h10a2 2 0 012 2v9a2 2 0 01-2 2zM12 10a8 8 0 1000 16 8 8 0 000-16z"></path></svg>
-                          </a>
-                          <a href="#" class="text-gray-300 hover:text-white
-  transition-colors duration-200">
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor"
-  viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
-  stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2
-  0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707-.293l-2.414-2.414a1 1 0 00-1.414
-  0l-2.414-2.414A1 1 0 004 7.586V7a2 2 0 012-2h12a2 2 0 012 2v.586z"></path></svg>
-                          </a>
-                      </div>
-                  </div>
-                  <div>
-                      <h4 class="font-semibold mb-3">Navegación</h4>
-                      <ul class="space-y-2 text-gray-300 hover:text-white
-  transition-colors duration-200">
-                          <li><a href="#hero">Inicio</a></li>
-                          <li><a href="#viral-products">Tendencias</a></li>
-                          <li><a href="#beneficios">Beneficios</a></li>
-                          <li><a href="#testimonios">Testimonios</a></li>
-                          <li><a href="#faq">FAQ</a></li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h4 class="font-semibold mb-3">Soporte</h4>
-                      <ul class="space-y-2 text-gray-300 hover:text-white
-  transition-colors duration-200">
-                          <li><a
-  href="mailto:soporte@jauria.com">soporte@jauria.com</a></li>
-                          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                          <li><a href="#">Chat en Vivo</a></li>
-                          <li><a href="#">Centro de Ayuda</a></li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h4 class="font-semibold mb-3">Newsletter</h4>
-                      <p class="text-gray-300 mb-3">Recibe novedades y ofertas
-  exclusivas</p>
-                      <form action="#" method="POST" class="flex items-stretch">
-                          <input type="email" name="email" placeholder="Tu email"
-  required class="w-full px-3 py-2 border border-gray-600 rounded-l-lg
-  focus:outline-none focus:ring-2 focus:ring-secondary-color text-white
-  bg-dark-color/50 placeholder-gray-400">
-                          <button type="submit" class="bg-secondary-color text-white
-  px-4 py-2 rounded-r-lg hover:bg-secondary-color/90 transition-colors
-  duration-200">Enviar</button>
-                      </form>
-                  </div>
-              </div>
-              <div class="border-t border-gray-700 pt-8 text-center text-gray-400
-  text-sm">
-                  © 2026 Jauria. Todos los derechos reservados. <a href="#"
-  class="text-gray-300 hover:text-white transition-colors duration-200">Política de
-  Privacidad</a> | <a href="#" class="text-gray-300 hover:text-white transition-colors
-  duration-200">Términos de Servicio</a>
-              </div>
-          </div>
-      </footer>
+    script.onerror = function() {
+      console.error('Failed to load AdSense script');
+    };
 
-      <!-- JavaScript for mobile menu, countdown, and lazy loading -->
-      <script>
-          // Mobile menu toggle
-          document.getElementById('mobile-menu-btn').addEventListener('click',
-  function() {
-              document.getElementById('mobile-menu').classList.toggle('hidden');
-          });
+    document.head.appendChild(script);
+  }
 
-          document.getElementById('mobile-menu-close').addEventListener('click',
-  function() {
-              document.getElementById('mobile-menu').classList.add('hidden');
-          });
+  // Initialize ads when script loads or when called manually
+  function initializeAds() {
+    // Only proceed if adsbygoogle is available
+    if (typeof window.adsbygoogle === 'undefined') {
+      // Wait for script to load
+      return loadAdSenseScript();
+    }
 
-          // Countdown timer for viral offer (ends Wednesday Aug 27, 2026 23:59)
-          function updateCountdown() {
-              const ahora = new Date().getTime();
-              const limite = new Date("Aug 27, 2026 23:59:59").getTime();
-              const distancia = limite - ahora;
+    // Initialize all adsbygoogle elements
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
 
-              if (distancia < 0) {
-                  document.getElementById("viral-countdown").textContent = "¡Oferta
-  finalizada!";
-                  return;
-              }
+  // Load script on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadAdSenseScript);
+  } else {
+    loadAdSenseScript();
+  }
 
-              const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60
-  * 60));
-              const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-              const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-              document.getElementById("viral-countdown").textContent =
-                `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2,
-  '0')}:${segundos.toString().padStart(2, '0')}`;
-          }
-
-          setInterval(updateCountdown, 1000);
-          updateCountdown(); // Run immediately on load
-      </script>
-  </body>
-  </html>
+  // Expose functions for manual initialization (e.g., after AJAX content load)
+  window.aurijaAdsense = {
+    loadScript: loadAdSenseScript,
+    initialize: initializeAds
+  };
+})();
+</script>
+</body>
+</html>
