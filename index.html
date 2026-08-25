@@ -244,7 +244,7 @@
                             <span class="text-2xl font-bold text-primary-color mr-2">$329.00</span>
                             <span class="text-gray-400 line-through text-sm ml-1">$459.00</span>
                         </div>
-                        <a href="https://wa.me/522741173931?text=Hola%2C%20quiero%20comprar%20la%20L%C3%A1mpara%20Drag%C3%B3n%20de%20Fuego%20(%24329)" target="_blank" rel="noopener" class="btn-primary w-full">Comprar por WhatsApp</a>
+                        <div id="product-component-dragon"></div>
                     </div>
                 </div>
                 <!-- Product 8: Botella de Agua Inteligente -->
@@ -261,7 +261,7 @@
                             <span class="text-2xl font-bold text-primary-color mr-2">$449.00</span>
                             <span class="text-gray-400 line-through text-sm ml-1">$599.00</span>
                         </div>
-                        <a href="https://wa.me/522741173931?text=Hola%2C%20quiero%20la%20Botella%20Inteligente%20de%20Hidrataci%C3%B3n%20(%24449)" target="_blank" rel="noopener" class="btn-primary w-full">Comprar por WhatsApp</a>
+                        <div id="product-component-botella"></div>
                     </div>
                 </div>
                 <!-- Product 9: Rizador de Pelo Portátil -->
@@ -278,7 +278,18 @@
                             <span class="text-2xl font-bold text-primary-color mr-2">$379.00</span>
                             <span class="text-gray-400 line-through text-sm ml-1">$529.00</span>
                         </div>
-                        <a href="https://wa.me/522741173931?text=Hola%2C%20quiero%20el%20Rizador%20de%20Pelo%20Port%C3%A1til%20(%24379)" target="_blank" rel="noopener" class="btn-primary w-full">Comprar por WhatsApp</a>
+                        <div id="product-component-rizador"></div>
+                    </div>
+                </div>
+                <!-- Product 10: Vela Aromática Retrato de Perro -->
+                <div class="product-card relative">
+                    <div class="absolute top-2 right-2 flex items-center gap-1 bg-secondary-color/90 text-white px-2 py-1 rounded text-xs z-10">
+                        <span>🐾</span><span>Printify</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 line-clamp-2">Vela Aromática Retrato de Perro (9oz)</h3>
+                        <p class="text-gray-500 mb-4 line-clamp-2">Vela de soya con ilustración de perro dibujada a mano, ideal para amantes de las mascotas. Varios aromas disponibles.</p>
+                        <div id="product-component-candle"></div>
                     </div>
                 </div>
             </div>
@@ -542,6 +553,38 @@
                 icon.classList.toggle('rotate-180');
             });
         });
+    </script>    <!-- Shopify Buy Button: checkout real para 4 productos -->
+    <script type="text/javascript">
+    (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+        } else { loadScript(); }
+        function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+                domain: 'wg7rj9-1u.myshopify.com',
+                storefrontAccessToken: 'e47d3c89b65fcc48b3c9c9447d6b1b91',
+            });
+            var commonOptions = {
+                product: { text: { button: 'Comprar Ahora' } },
+                cart: { text: { total: 'Subtotal', button: 'Pagar' } },
+                modalProduct: { text: { button: 'Comprar Ahora' } },
+            };
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('product', { id: '15337855025197', node: document.getElementById('product-component-dragon'), moneyFormat: '%24%7B%7Bamount%7D%7D', options: commonOptions });
+                ui.createComponent('product', { id: '15337855090733', node: document.getElementById('product-component-botella'), moneyFormat: '%24%7B%7Bamount%7D%7D', options: commonOptions });
+                ui.createComponent('product', { id: '15337855221805', node: document.getElementById('product-component-rizador'), moneyFormat: '%24%7B%7Bamount%7D%7D', options: commonOptions });
+                ui.createComponent('product', { id: '15327877890093', node: document.getElementById('product-component-candle'), moneyFormat: '%24%7B%7Bamount%7D%7D', options: commonOptions });
+            });
+        }
+    })();
     </script>
 </body>
 </html>
